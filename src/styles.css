@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+}
+.left,
+.right {
+  display: flex;
+  width: 20%;
+  height: 90vh;
+  background-color: #efece3;
+}
+.main {
+  display: flex;
+  width: 60%;
+  height: 90vh;
+  background-color: #8fabd4;
+  flex-direction: column;
+}
+
+.search {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-size: larger;
+}
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.city {
+  font-size: 40px;
+}
