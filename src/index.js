@@ -1,6 +1,7 @@
 import "./styles.css";
 
 async function getWeather(city) {
+  document.getElementById("loader").style.display = "block";
   try {
     const response = await fetch(
       `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?unitGroup=metric&include=current%2Calerts&key=2WLLVVDPTHBBH8WJSHS4KJJD8&contentType=json`
@@ -18,6 +19,8 @@ async function getWeather(city) {
     }
   } catch (error) {
     displayMessage(error);
+  } finally {
+    document.getElementById("loader").style.display = "none"; // Hide spinner
   }
 }
 
